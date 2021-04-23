@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment_form.css">
+    <title>Payment Form</title>
+</head>
+<body>
+    <!-- payment fornm -->
+    <div class="full">
+    <form action="">
+    <h1>Payment Form</h1>
+    <p>Required details are given symbols *</p>
+    <h2>User Information</h2>
+    <p>
+        Name:*<input type="text" name="name" id="name" placeholder="FirstName Lastname" required>
+    </p>
+    <fieldset>
+      <legend>Gender:*</legend>
+        Male: <input type="radio" name="gender" id="male" required>
+        Female: <input type="radio" name="gender" id="female"required>
+        Other: <input type="radio" name="gender" id="other" required>
+    </fieldset>
+    <p>
+     Address:   <textarea name="address" id="address" cols="100" rows="8" placeholder="address" ></textarea>
+    </p>
+    <p>Email: *<input type="email" name="email" id="email" required placeholder="nikhil@gmail.com" ></p>
+    <p>Pincode: *<input type="number" name="pincode" id="pincode" placeholder="123456" required></p>
+    <hr>
+
+    <!-- payment details -->
+
+    <h2>Payment Information:</h2>
+    <p>Card Type: *
+        <select name="card_type" id="card_type" required>
+            <option value=" ">--Select a Payment option--</option>
+            <option value="visa">Visa</option>
+            <option value="master_card">Master Card</option>
+            <option value="paytm">Paytm</option>
+        </select>
+    </p>
+    <p>Card Number: * <input placeholder="1111-2222-3333-4444" type="number" name="card_number" id="card _number" required></p>
+    <p>Expiry Date: * <input type="date" name="exp_date" id="exp_date" required></p>
+    <p>CVV: * <input type="password" placeholder="123" name="cvv" id="cvv" required></p>
+    <p><input type="submit" value="Pay now"></p>
+
+</form>
+</div>    
+</body>
+</html>
